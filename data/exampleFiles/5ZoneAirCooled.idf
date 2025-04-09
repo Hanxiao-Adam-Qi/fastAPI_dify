@@ -3609,3 +3609,42 @@
     ValueWhenMaximumOrMinimum,  !- Aggregation Type for Variable or Meter 9
     Zone Infiltration Sensible Heat Loss Energy,  !- Variable or Meter 10 Name
     ValueWhenMaximumOrMinimum;  !- Aggregation Type for Variable or Meter 10
+
+  Output:Table:Monthly,
+    Window Energy Zone Summary,  !- Name
+    ,                        !- Digits After Decimal
+    Zone Windows Total Heat Gain Energy,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Zone Windows Total Heat Loss Energy,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Zone Windows Total Transmitted Solar Radiation Energy,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Zone Exterior Windows Total Transmitted Beam Solar Radiation Energy,  !- Variable or Meter 4 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+    Zone Exterior Windows Total Transmitted Diffuse Solar Radiation Energy,  !- Variable or Meter 5 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+    Zone Interior Windows Total Transmitted Diffuse Solar Radiation Energy,  !- Variable or Meter 6 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+    Zone Interior Windows Total Transmitted Beam Solar Radiation Energy,  !- Variable or Meter 7 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 7
+
+
+  Output:Table:Monthly,
+    Average Outdoor Conditions,  !- Name
+    ,                        !- Digits After Decimal
+    Site Outdoor Air Drybulb Temperature,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Site Outdoor Air Wetbulb Temperature,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Site Outdoor Air Dewpoint Temperature,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Site Wind Speed,         !- Variable or Meter 4 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+    Site Sky Temperature,    !- Variable or Meter 5 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+    Site Diffuse Solar Radiation Rate per Area,  !- Variable or Meter 6 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+    Site Direct Solar Radiation Rate per Area,  !- Variable or Meter 7 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+    Raining,                 !- Variable or Meter 8 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 8
